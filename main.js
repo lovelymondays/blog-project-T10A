@@ -195,3 +195,16 @@ projectsAnimation.forEach((project, index) => {
 //   once: true,
 // });
 AOS.init();
+
+var btnSubmit = document.querySelector("submit");
+var modal = document.querySelector(".modal-container");
+if (btnSubmit) {
+  btnSubmit.addEventListener("click", function () {
+    modal.classList.add("show");
+    const next = document.querySelector(".next");
+    next.setAttribute(
+      "value",
+      "https://lovelymondays.github.io/blog-project-T10A/contact.html"
+    );
+  });
+}
